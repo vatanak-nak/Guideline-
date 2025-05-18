@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Client Setup Guides</title>
+    <style>
+      :root {
+        --primary: #6366f1;
+        --primary-hover: #4f46e5;
+        --background: #f8fafc;
+        --card-bg: #ffffff;
+        --text: #1e293b;
+        --text-light: #64748b;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", system-ui, -apple-system, sans-serif;
+      }
+
+      body {
+        background: var(--background);
+        color: var(--text);
+        line-height: 1.6;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        background: linear-gradient(135deg, var(--primary), #4f46e5);
+        padding: 4rem 2rem;
+        text-align: center;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        color: white;
+        font-weight: 700;
+        letter-spacing: -0.025em;
+      }
+
+      .container {
+        flex: 1;
+        max-width: 1200px;
+        margin: -3rem auto 0;
+        padding: 2rem;
+        width: 100%;
+      }
+
+      .guides-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 2rem 0;
+      }
+
+      .guide-card {
+        background: var(--card-bg);
+        border-radius: 1rem;
+        padding: 2rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        border: 1px solid #e2e8f0;
+        cursor: pointer;
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .guide-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      }
+
+      .guide-icon {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 1.5rem;
+        transition: transform 0.2s ease;
+      }
+
+      .guide-card:hover .guide-icon {
+        transform: scale(1.1);
+      }
+
+      .guide-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: var(--text);
+        text-align: center;
+      }
+
+      .guide-description {
+        color: var(--text-light);
+        text-align: center;
+        margin-bottom: 1.5rem;
+        flex-grow: 1;
+      }
+
+      .guide-button {
+        background: var(--primary);
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        font-weight: 500;
+        transition: background 0.2s ease;
+        width: fit-content;
+      }
+
+      .guide-button:hover {
+        background: var(--primary-hover);
+      }
+
+      footer {
+        background: linear-gradient(135deg, var(--primary), #4f46e5);
+        color: white;
+        padding: 2rem;
+        text-align: center;
+        margin-top: auto;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 1rem;
+        }
+
+        .guides-grid {
+          grid-template-columns: 1fr;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Email Client Setup Guides</h1>
+    </header>
+
+    <div class="container">
+      <div class="guides-grid">
+        <a href="Guideline outlook/outlook.html" class="guide-card">
+          <img
+            <img
+            src="https://img.icons8.com/color/96/microsoft-outlook-2019.png"
+            alt="Outlook"
+            class="guide-icon"
+          />
+          <h2 class="guide-title">Microsoft Outlook</h2>
+          <p class="guide-description">
+            Step-by-step guide to configure your email account in Outlook with
+            advanced settings and security options.
+          </p>
+          <span class="guide-button">View Guide</span>
+        </a>
+
+        <a href="Guideline Thunderbird/thunderbird.html" class="guide-card">
+          <img
+            src="https://img.icons8.com/color/96/000000/thunderbird.png"
+            alt="Thunderbird"
+            class="guide-icon"
+          />
+          <h2 class="guide-title">Mozilla Thunderbird</h2>
+          <p class="guide-description">
+            Complete setup instructions for Thunderbird including IMAP/POP
+            configuration and add-on recommendations.
+          </p>
+          <span class="guide-button">View Guide</span>
+        </a>
+
+        <a
+          href="Google mail Guideline/Google mail Guideline.html"
+          class="guide-card"
+        >
+          <img
+            src="https://img.icons8.com/color/96/000000/gmail.png"
+            alt="Gmail"
+            class="guide-icon"
+          />
+          <h2 class="guide-title">Google Workspace</h2>
+          <p class="guide-description">
+            Comprehensive guide for Gmail configuration including workspace
+            integration and security best practices.
+          </p>
+          <span class="guide-button">View Guide</span>
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        &copy; 2024 Email Setup Hub. All rights reserved.<br />
+        Need help? Contact our support team at support@emailsetuphub.com
+      </p>
+    </footer>
+  </body>
+</html>
